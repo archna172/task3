@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Heading</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        .image-section {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtBUK3Z1Ot2C4_WwV7o7DYI4JWNkGLDZj6kg&s');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        .heading h6 {
+            margin: 5px 0;
+        }
+        .heading h2 {
+            margin: 10px 0;
+        }
+        .heading button {
+            color: red;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .heading2{
+            justify-content: center;
+            text-align: center;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        .card1 {
+            width: 18rem;
+        }
+        .card1 img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px auto;
+            display: block;
+        }
+        .navbar-title {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar-footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .card-footer-icons {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .card-footer-icons a {
+            font-size: 20px;
+            color: #6c757d;
+            transition: color 0.3s ease;
+        }
+        .card-footer-icons a:hover {
+            color: #000;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog layout</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">AboutMe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Upgrade To Pro</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                    <a href="#" class="nav-link"><i class="fas fa-user"></i></a>
+                    <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="image-section">
+        <div class="heading">
+            <h6>Fashion</h6>
+            <h2>Next Level Mustache</h2>
+            <h6>August 23, 2021  No comments</h6>
+            <button>Continue reading</button>
+        </div>
+    </div>
+    <div class="heading2">
+        <h6>LOOKS</h6>
+        <h2>WILLIAM BURGS DREAMCATCHER</h2>
+        <h6>August 23, 2021  No comments</h6>
+    </div>
+    <div class="container mt-5">
+        <div class="cards-container">
+            <div class="card mb-3">
+                <img src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius temporibus exercitationem accusamus consequatur omnis. Maxime ipsam id quibusdam dignissimos sunt quia recusandae nihil deserunt? Vero libero aperiam a optio aut?.</p>
+                </div>
+            </div>
+            <div class="cards-container">
+                <div class="card card1" style="width: 18rem;">
+                    <div class="navbar-title">Aboutme</div>
+                    <img src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p p1 style="font-style: italic;justify-content: center;text-align: center;"font>Rachel elizabeth </p>
+                        <p style="justify-content: center;text-align: center;">XOXO</p>
+                    </div>
+                    <div class="navbar-footer">Socialme</div>
+                    <div class="card-footer-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
